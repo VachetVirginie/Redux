@@ -9,4 +9,4 @@ export const decrement = () => ({ type: types.DECREMENT });
 
 export const increment2 = () => ({ type: types.INCREMENT2 });
 
-export const valeur = () => ({ type: types.valeur });
+export const valeur = (value) => ({ type: types.VALEUR, value: value });

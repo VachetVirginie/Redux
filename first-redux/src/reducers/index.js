@@ -14,7 +14,7 @@ export default function counterReducer(state, action) {
         case types.INCREMENT2:
             return state +2;
         case types.VALEUR:
-            return state +10;   
+            return state + parseInt(action.value);   
 
         default:
             return state

@@ -51,9 +51,8 @@ document.getElementById('incrementAsync')
         }, 1000)
     })
 
-    document.getElementById('valeur')
+    document.getElementById('plusvaleur')
     .addEventListener('click', function () {
-        setTimeout(function () {
-            store.dispatch(actions.valeur())
-        }, 1000)
+        let value = document.getElementById('valeur').value;
+        store.dispatch(actions.valeur(value))
     })
