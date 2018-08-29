@@ -1,3 +1,5 @@
+// toutes interactions avec le store
+
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const UPDATE_CUSTOM_INCREMENT = 'UPDATE_CUSTOM_INCREMENT';

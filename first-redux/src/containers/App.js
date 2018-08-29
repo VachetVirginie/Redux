@@ -1,3 +1,5 @@
+// à quoi a acces le composent
+
 import { connect } from 'react-redux'
 import * as actions from '../actions/index'
 import { bindActionCreators } from 'redux'
@@ -11,10 +13,11 @@ const mapStateToProps = state => ({
 
 
 const mapDispatchToProps = dispatch => ({
+    //combine le dispatch avec les actions qu'on lui a deja envoyé
     actions: bindActionCreators(actions, dispatch)
 })
 
-
+//this.props.action.monAction();
 export default connect(
     mapStateToProps,
     mapDispatchToProps

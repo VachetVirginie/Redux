@@ -11,7 +11,7 @@ export default function counter(state = 0, action) {
         case types.DECREMENT:
             return state - 1;
         case types.UPDATE_CUSTOM_INCREMENT:
-            return state + parseInt(action.value);
+            return state + parseInt(action.value, 10);
         default:
             return state
     }
