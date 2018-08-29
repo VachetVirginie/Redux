@@ -2,7 +2,6 @@ import store from '../store';
 import * as actions from '../actions/index'
 
 
-
 document.getElementById('increment_by')
     .addEventListener('click', function () {
         let val = document.getElementById('increment_by_input').value;
