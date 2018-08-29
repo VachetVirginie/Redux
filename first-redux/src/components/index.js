@@ -20,7 +20,4 @@ document.getElementById('decrement')
         store.dispatch(actions.decrement())
     })
 
-document.getElementById('fetch_random_number')
-    .addEventListener('click', function () {
-        store.dispatch(actions.fetchRandomNumber());
-    })
+

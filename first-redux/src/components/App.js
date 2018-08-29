@@ -7,7 +7,7 @@ class App extends Component {
     }
 
     updateInput(event) {
-        this.updateInput.updateInputValue(event.target.value);
+        this.props.actions.updateInputValue(event.target.value);
     }
 
     render() {
