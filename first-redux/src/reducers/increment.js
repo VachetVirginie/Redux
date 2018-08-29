@@ -2,7 +2,7 @@ import * as types from '../constants/ActionTypes'
 
 let initialState = {
   error: '',
-  randomFetch: 1
+    inputValue: 1
 };
 
 export default function increment(state = initialState, action) {
@@ -18,10 +18,10 @@ export default function increment(state = initialState, action) {
                 ...state,
                 error: ''
             };
-        case types.UPDATE_RANDOM_FETCH:
+        case types.UPDATE_INPUT_VALUE:
             return {
                 ...state,
-                randomFetch: action.randomFetch
+                inputValue: action.inputValue
             };
         default:
             return state

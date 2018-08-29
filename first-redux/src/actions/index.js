@@ -22,12 +22,12 @@ export const displayIncrementInputError = (error) => ({ type: types.DISPLAY_INCR
 export const eraseIncrementInputError = () => ({ type: types.ERASE_INCREMENT_INPUT_ERROR});
 
 
-export const updateRandomFetch = (value) => ({ type: types.UPDATE_RANDOM_FETCH, randomFetch: value});
+export const update_input_value = (value) => ({ type: types.UPDATE_INPUT_VALUE, inputValue: value});
 
 export const fetchRandomNumber = function() {
     return async (dispatch) => {
         const response = await fetch('https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8');
         const datas = await response.json();
-        dispatch(updateRandomFetch(datas.data[0]));
+        dispatch(update_input_value (datas.data[0]));
     }
 };

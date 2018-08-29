@@ -8,7 +8,7 @@ import App from '../components/App';
 
 const mapStateToProps = state => ({
     counter: state.counter,
-    randomFetch: state.increment.randomFetch
+    inputValue: state.increment.inputValue
 })
 
 
